@@ -6,7 +6,7 @@
 
 #include <libparser.h>
 
-class la_classe:public IniFile {
+class la_classe:public WithConfigFile {
 
     public:void parse_config_line (std::vector<std::string> &line) ;
 

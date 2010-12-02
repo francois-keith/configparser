@@ -14,7 +14,6 @@
 %define parser_class_name "Parser"
 
 %parse-param { IniLoader::Scanner &scanner }
-%parse-param { std::string currentSection }
 %parse-param { std::vector< std::vector<std::string> > &configlines }
 
 %lex-param   { IniLoader::Scanner &scanner }
@@ -47,7 +46,7 @@
 	                 IniLoader::Scanner &scanner);
 }
 
-%token STRING SECTION_START SECTION_END ASSIGNMENT
+%token STRING SEPARATOR COMMENTAIRE COMMAND_START COMMAND_STOP
 
 %%
 
@@ -57,22 +56,30 @@ input
 	;
 	
 line
-	: section
-	| value
+	: line_1
+	| line_2
+	| commentaire
 	;
 	
-section
-	: SECTION_START STRING SECTION_END { currentSection = $2; }
+line_1
+	: COMMAND_START STRING COMMAND_STOP STRING { std::vector<std::string>  line ;
+						     line.push_back ( $2 ) ;
+						     line.push_back ( $4 ) ; 
+						     configlines.push_back ( line ) ; }
+	;
+		
+
+line_2
+	: COMMAND_START STRING COMMAND_STOP STRING STRING { std::vector<std::string>  line ;
+						     	    line.push_back ( $2 ) ;
+						            line.push_back ( $4 ) ; 
+						            line.push_back ( $5 ) ; 
+						     	    configlines.push_back ( line ) ; }
 	;
 	
-value
-	: STRING ASSIGNMENT STRING { std::vector<std::string> line ;
-				     line.push_back( $1 ) ;
-				     line.push_back( $3 ) ;
-	                             configlines.push_back(line) ; 
-				     }
-			
-	;
+
+commentaire
+        : COMMENTAIRE { }
 	
 %%
 

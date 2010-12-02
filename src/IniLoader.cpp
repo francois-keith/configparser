@@ -2,7 +2,7 @@
 
 #include "Scanner.h"
 
-void IniFile::read_config_file(const char * fileName) throw(std::string) {
+void WithConfigFile::read_config_file(const char * fileName) throw(std::string) {
 
 	std::ifstream inFile(fileName);
 
@@ -11,7 +11,7 @@ void IniFile::read_config_file(const char * fileName) throw(std::string) {
     	}
 
     	IniLoader::Scanner scanner(&inFile);
-    	IniLoader::Parser  parser(scanner, "", config_lines);
+    	IniLoader::Parser  parser(scanner, config_lines);
 
     	parser.parse();
 	

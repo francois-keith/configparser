@@ -12,7 +12,7 @@
 #include <vector>
 
 
-class IniFile {
+class WithConfigFile {
 
   public:
 
