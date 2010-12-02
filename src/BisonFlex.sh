@@ -1,4 +1,4 @@
 #!/bin/sh
 
-bison parser.y
+bison parser.ypp
 flex scanner.l
