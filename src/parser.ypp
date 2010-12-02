@@ -9,14 +9,14 @@
 %defines
 %locations
 
-%define namespace "IniLoader"
+%define namespace "BisonFlex"
 
 %define parser_class_name "Parser"
 
-%parse-param { IniLoader::Scanner &scanner }
+%parse-param { BisonFlex::Scanner &scanner }
 %parse-param { std::vector< std::vector<std::string> > &configlines }
 
-%lex-param   { IniLoader::Scanner &scanner }
+%lex-param   { BisonFlex::Scanner &scanner }
 
 %code requires {
 	
@@ -29,7 +29,7 @@
 	// We want to return a string
 	#define YYSTYPE std::string
 
-		namespace IniLoader {
+		namespace BisonFlex {
 
 			// Forward-declare the Scanner class; the Parser needs to be assigned a 
 			// Scanner, but the Scanner can't be declared without the Parser
@@ -41,9 +41,9 @@
 
 %code {
 	// Prototype for the yylex function
-	static int yylex(IniLoader::Parser::semantic_type * yylval,
-	                 IniLoader::Parser::location_type * yylloc,
-	                 IniLoader::Scanner &scanner);
+	static int yylex(BisonFlex::Parser::semantic_type * yylval,
+	                 BisonFlex::Parser::location_type * yylloc,
+	                 BisonFlex::Scanner &scanner);
 }
 
 %token STRING SEPARATOR COMMENTAIRE COMMAND_START COMMAND_STOP
@@ -84,7 +84,7 @@ commentaire
 %%
 
 // Error function throws an exception (std::string) with the location and error message
-void IniLoader::Parser::error(const IniLoader::Parser::location_type &loc,
+void BisonFlex::Parser::error(const BisonFlex::Parser::location_type &loc,
                                           const std::string &msg) {
 	std::ostringstream ret;
 	ret << "Parser Error at " << loc << ": " << msg;
@@ -94,9 +94,9 @@ void IniLoader::Parser::error(const IniLoader::Parser::location_type &loc,
 // Now that we have the Parser declared, we can declare the Scanner and implement
 // the yylex function
 #include "scanner.h"
-static int yylex(IniLoader::Parser::semantic_type * yylval,
-                 IniLoader::Parser::location_type * yylloc,
-                 IniLoader::Scanner &scanner) {
+static int yylex(BisonFlex::Parser::semantic_type * yylval,
+                 BisonFlex::Parser::location_type * yylloc,
+                 BisonFlex::Scanner &scanner) {
 	return scanner.yylex(yylval, yylloc);
 }
 

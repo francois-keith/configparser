@@ -22,10 +22,10 @@ separator	[\t ]+
 	yylloc->step();
 %}
 
-[#].*"\n"			{ return IniLoader::Parser::token::COMMENTAIRE ; } 
-"["      			{ return IniLoader::Parser::token::COMMAND_START ; }
-"]"				{ return IniLoader::Parser::token::COMMAND_STOP ; }
-[0-9a-zA-Z\._\-]*		{ *yylval = yytext; return IniLoader::Parser::token::STRING ; }			
+[#].*"\n"			{ return BisonFlex::Parser::token::COMMENTAIRE ; } 
+"["      			{ return BisonFlex::Parser::token::COMMAND_START ; }
+"]"				{ return BisonFlex::Parser::token::COMMAND_STOP ; }
+[0-9a-zA-Z\._\-]*		{ *yylval = yytext; return BisonFlex::Parser::token::STRING ; }			
 
 .            { yylloc->step(); }
 "\n"+        { yylloc->lines(yyleng); yylloc->step(); }

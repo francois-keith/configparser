@@ -13,14 +13,14 @@
 
 // Override the interface for yylex since we namespaced it
 #undef YY_DECL
-#define YY_DECL int IniLoader::Scanner::yylex()
+#define YY_DECL int BisonFlex::Scanner::yylex()
 
 // Include Bison for types / tokens
 #include "parser.tab.hpp"
 
 
 
-namespace IniLoader {
+namespace BisonFlex {
     class Scanner:public yyFlexLexer {
       public:
 

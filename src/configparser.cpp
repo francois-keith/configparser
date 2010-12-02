@@ -10,8 +10,8 @@ void WithConfigFile::read_config_file(const char * fileName) throw(std::string) 
 		throw std::string("Unable to open file");
     	}
 
-    	IniLoader::Scanner scanner(&inFile);
-    	IniLoader::Parser  parser(scanner, config_lines);
+    	BisonFlex::Scanner scanner(&inFile);
+    	BisonFlex::Parser  parser(scanner, config_lines);
 
     	parser.parse();
 	
