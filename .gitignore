@@ -30,3 +30,10 @@ Makefile.in
 /missing
 
 /testing/hello
+
+src/lex.yy.cc
+src/location.hh
+src/parser.tab.cpp
+src/parser.tab.hpp
+src/position.hh
+src/stack.hh
