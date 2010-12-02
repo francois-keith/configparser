@@ -16,7 +16,7 @@
 #define YY_DECL int IniLoader::Scanner::yylex()
 
 // Include Bison for types / tokens
-#include "parser.tab.h"
+#include "parser.tab.hpp"
 
 
 
