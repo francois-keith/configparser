@@ -5,8 +5,7 @@
  * http://sam.zoy.org/wtfpl/COPYING for more details. */
  
 %{
-	#include <iostream>				// DEBUG
-	#include "Scanner.h"
+	#include "scanner.h"
 	// used to keep track of location
 	#define YY_USER_ACTION yylloc->columns(yyleng);
 %}
@@ -23,11 +22,11 @@ separator	[\t ]+
 	yylloc->step();
 %}
 
-[#].*"\n"			{ std::cout << "COMMENTAIRE" << std::endl ;   return IniLoader::Parser::token::COMMENTAIRE ; } 
-"["      			{ std::cout << "COMMAND_START" << std::endl ; return IniLoader::Parser::token::COMMAND_START ; }
-"]"				{ std::cout << "COMMAND_STOP" << std::endl ;  return IniLoader::Parser::token::COMMAND_STOP ; }
-[0-9a-zA-Z\._\-]*		{ std::cout << "STRING " << yytext << std::endl ; *yylval = yytext; return IniLoader::Parser::token::STRING ; }			
+[#].*"\n"			{ return IniLoader::Parser::token::COMMENTAIRE ; } 
+"["      			{ return IniLoader::Parser::token::COMMAND_START ; }
+"]"				{ return IniLoader::Parser::token::COMMAND_STOP ; }
+[0-9a-zA-Z\._\-]*		{ *yylval = yytext; return IniLoader::Parser::token::STRING ; }			
 
-.            { std::cout << "GARBAGE" << std::endl ; yylloc->step(); }
-"\n"+        { std::cout << "EOL" << std::endl ; yylloc->lines(yyleng); yylloc->step(); }
+.            { yylloc->step(); }
+"\n"+        { yylloc->lines(yyleng); yylloc->step(); }
 

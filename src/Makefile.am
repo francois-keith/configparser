@@ -1,7 +1,7 @@
 AM_CPPFLAGS = -I$(srcdir)/../include
 
-lib_LTLIBRARIES = libparser.la
+lib_LTLIBRARIES = libconfigparser.la
 
-libparser_la_SOURCES = IniLoader.cpp lex.yy.cc parser.tab.cpp 
+libconfigparser_la_SOURCES = configparser.cpp lex.yy.cc parser.tab.cpp 
 
 

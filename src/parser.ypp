@@ -93,7 +93,7 @@ void IniLoader::Parser::error(const IniLoader::Parser::location_type &loc,
 
 // Now that we have the Parser declared, we can declare the Scanner and implement
 // the yylex function
-#include "Scanner.h"
+#include "scanner.h"
 static int yylex(IniLoader::Parser::semantic_type * yylval,
                  IniLoader::Parser::location_type * yylloc,
                  IniLoader::Scanner &scanner) {

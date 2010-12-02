@@ -1,1 +1,1 @@
-nobase_include_HEADERS =	libparser.h
+nobase_include_HEADERS =	configparser.h

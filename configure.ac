@@ -1,6 +1,6 @@
 # Prelude.
 
-AC_INIT([libparser], [0.0], [druon@lirmm.fr])
+AC_INIT([lib_configparser], [0.1], [druon@lirmm.fr])
 AC_CONFIG_MACRO_DIR([m4])
 
 AM_INIT_AUTOMAKE([foreign -Wall -Werror])

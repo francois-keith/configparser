@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-#include <libparser.h>
+#include <configparser.h>
 
 class la_classe:public WithConfigFile {
 

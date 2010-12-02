@@ -1,4 +1,4 @@
-LDADD = ../src/libparser.la
+LDADD = ../src/libconfigparser.la
 AM_CPPFLAGS = -I$(srcdir)/../include
 
 

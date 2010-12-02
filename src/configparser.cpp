@@ -1,6 +1,6 @@
-#include <libparser.h>
+#include <configparser.h>
 
-#include "Scanner.h"
+#include "scanner.h"
 
 void WithConfigFile::read_config_file(const char * fileName) throw(std::string) {
 
