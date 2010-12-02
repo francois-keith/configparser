@@ -12,12 +12,6 @@ LT_INIT
 AC_PROG_LIBTOOL
 AC_PROG_CXX
 
-YACC=bison
-
-AC_PROG_YACC
-AC_PROG_LEX
-
-
 # Checks for libraries.
 
 # Checks for header.
