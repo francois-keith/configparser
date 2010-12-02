@@ -4,10 +4,11 @@
  * To Public License, Version 2, as published by Sam Hocevar. See
  * http://sam.zoy.org/wtfpl/COPYING for more details. */
  
-#include "classe.h"
 #include <string>
 #include <iostream>
 #include <cstring>
+
+#include "classe.h"
 
 int main(int argc, char * argv[]) {
 	
