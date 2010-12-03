@@ -29,7 +29,7 @@ Makefile.in
 /stamp-h1
 /missing
 
-/testing/hello
+/testing/test
 
 src/lex.yy.cc
 src/location.hh
