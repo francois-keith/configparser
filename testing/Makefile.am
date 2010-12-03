@@ -2,6 +2,6 @@ LDADD = ../src/libconfigparser.la
 AM_CPPFLAGS = -I$(srcdir)/../include
 
 
-noinst_PROGRAMS = hello 
+noinst_PROGRAMS = test
 
-hello_SOURCES = classe.cpp Main.cpp  
+test_SOURCES = classe.cpp Main.cpp  

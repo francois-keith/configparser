@@ -14,8 +14,16 @@ int main(int argc, char * argv[]) {
 	
 	la_classe aldo ;
 	
-	aldo.read_config_file( argv[1] ) ;
+	try {
 	
+		aldo.read_config_file( argv[1] ) ;
+	
+	} catch ( std::string error) {
+		
+		std::cerr << error << std::endl ;
+	
+	}
+
 	return 0;
 
 }
