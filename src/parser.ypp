@@ -58,6 +58,9 @@ input
 line
 	: line_1
 	| line_2
+	| line_3
+	| line_4
+	| line_5
 	| commentaire
 	;
 	
@@ -77,7 +80,36 @@ line_2
 						     	    configlines.push_back ( line ) ; }
 	;
 	
+line_3
+	: COMMAND_START STRING COMMAND_STOP STRING STRING STRING { std::vector<std::string>  line ;
+						     	    line.push_back ( $2 ) ;
+						            line.push_back ( $4 ) ; 
+						            line.push_back ( $5 ) ;
+						            line.push_back ( $6 ) ;
+						     	    configlines.push_back ( line ) ; }
+	;
 
+line_4
+	: COMMAND_START STRING COMMAND_STOP STRING STRING STRING STRING { std::vector<std::string>  line ;
+								     	    line.push_back ( $2 ) ;
+								            line.push_back ( $4 ) ; 
+								            line.push_back ( $5 ) ; 
+								            line.push_back ( $6 ) ; 
+								            line.push_back ( $7 ) ; 
+								     	    configlines.push_back ( line ) ; }
+	;
+
+line_5
+	: COMMAND_START STRING COMMAND_STOP STRING STRING STRING STRING STRING { std::vector<std::string>  line ;
+									     	    line.push_back ( $2 ) ;
+									            line.push_back ( $4 ) ; 
+									            line.push_back ( $5 ) ; 
+									            line.push_back ( $6 ) ; 
+									            line.push_back ( $7 ) ; 
+									            line.push_back ( $8 ) ; 
+						     	    			    configlines.push_back ( line ) ; }
+	;
+	
 commentaire
         : COMMENTAIRE { }
 	
@@ -86,6 +118,8 @@ commentaire
 // Error function throws an exception (std::string) with the location and error message
 void BisonFlex::Parser::error(const BisonFlex::Parser::location_type &loc,
                                           const std::string &msg) {
+	
+	std::cerr << "Parser Error at " << loc << ": " << msg << std::endl ;
 	std::ostringstream ret;
 	ret << "Parser Error at " << loc << ": " << msg;
 	throw ret.str();

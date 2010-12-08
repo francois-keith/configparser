@@ -415,20 +415,20 @@ namespace BisonFlex {
     YY_REDUCE_PRINT (yyn);
     switch (yyn)
       {
-	  case 7:
+	  case 10:
 
 /* Line 677 of lalr1.cc  */
-#line 65 "parser.ypp"
+#line 68 "parser.ypp"
     { std::vector<std::string>  line ;
 						     line.push_back ( (yysemantic_stack_[(4) - (2)]) ) ;
 						     line.push_back ( (yysemantic_stack_[(4) - (4)]) ) ; 
 						     configlines.push_back ( line ) ; }
     break;
 
-  case 8:
+  case 11:
 
 /* Line 677 of lalr1.cc  */
-#line 73 "parser.ypp"
+#line 76 "parser.ypp"
     { std::vector<std::string>  line ;
 						     	    line.push_back ( (yysemantic_stack_[(5) - (2)]) ) ;
 						            line.push_back ( (yysemantic_stack_[(5) - (4)]) ) ; 
@@ -436,17 +436,56 @@ namespace BisonFlex {
 						     	    configlines.push_back ( line ) ; }
     break;
 
-  case 9:
+  case 12:
 
 /* Line 677 of lalr1.cc  */
-#line 82 "parser.ypp"
+#line 84 "parser.ypp"
+    { std::vector<std::string>  line ;
+						     	    line.push_back ( (yysemantic_stack_[(6) - (2)]) ) ;
+						            line.push_back ( (yysemantic_stack_[(6) - (4)]) ) ; 
+						            line.push_back ( (yysemantic_stack_[(6) - (5)]) ) ;
+						            line.push_back ( (yysemantic_stack_[(6) - (6)]) ) ;
+						     	    configlines.push_back ( line ) ; }
+    break;
+
+  case 13:
+
+/* Line 677 of lalr1.cc  */
+#line 93 "parser.ypp"
+    { std::vector<std::string>  line ;
+								     	    line.push_back ( (yysemantic_stack_[(7) - (2)]) ) ;
+								            line.push_back ( (yysemantic_stack_[(7) - (4)]) ) ; 
+								            line.push_back ( (yysemantic_stack_[(7) - (5)]) ) ; 
+								            line.push_back ( (yysemantic_stack_[(7) - (6)]) ) ; 
+								            line.push_back ( (yysemantic_stack_[(7) - (7)]) ) ; 
+								     	    configlines.push_back ( line ) ; }
+    break;
+
+  case 14:
+
+/* Line 677 of lalr1.cc  */
+#line 103 "parser.ypp"
+    { std::vector<std::string>  line ;
+									     	    line.push_back ( (yysemantic_stack_[(8) - (2)]) ) ;
+									            line.push_back ( (yysemantic_stack_[(8) - (4)]) ) ; 
+									            line.push_back ( (yysemantic_stack_[(8) - (5)]) ) ; 
+									            line.push_back ( (yysemantic_stack_[(8) - (6)]) ) ; 
+									            line.push_back ( (yysemantic_stack_[(8) - (7)]) ) ; 
+									            line.push_back ( (yysemantic_stack_[(8) - (8)]) ) ; 
+						     	    			    configlines.push_back ( line ) ; }
+    break;
+
+  case 15:
+
+/* Line 677 of lalr1.cc  */
+#line 114 "parser.ypp"
     { }
     break;
 
 
 
 /* Line 677 of lalr1.cc  */
-#line 450 "parser.tab.cpp"
+#line 489 "parser.tab.cpp"
 	default:
           break;
       }
@@ -655,8 +694,8 @@ namespace BisonFlex {
   const signed char
   Parser::yypact_[] =
   {
-        -4,    -5,     1,     0,    -5,    -5,    -5,    -5,     2,    -5,
-      -5,     4,     5,    -5
+        -4,    -5,     1,     0,    -5,    -5,    -5,    -5,    -5,    -5,
+      -5,     2,    -5,    -5,     4,     5,     7,     8,     9,    -5
   };
 
   /* YYDEFACT[S] -- default rule to reduce with in state S when YYTABLE
@@ -665,22 +704,22 @@ namespace BisonFlex {
   const unsigned char
   Parser::yydefact_[] =
   {
-         0,     9,     0,     0,     3,     4,     5,     6,     0,     1,
-       2,     0,     7,     8
+         0,    15,     0,     0,     3,     4,     5,     6,     7,     8,
+       9,     0,     1,     2,     0,    10,    11,    12,    13,    14
   };
 
   /* YYPGOTO[NTERM-NUM].  */
   const signed char
   Parser::yypgoto_[] =
   {
-        -5,    -5,     7,    -5,    -5,    -5
+        -5,    -5,    10,    -5,    -5,    -5,    -5,    -5,    -5
   };
 
   /* YYDEFGOTO[NTERM-NUM].  */
   const signed char
   Parser::yydefgoto_[] =
   {
-        -1,     3,     4,     5,     6,     7
+        -1,     3,     4,     5,     6,     7,     8,     9,    10
   };
 
   /* YYTABLE[YYPACT[STATE-NUM]].  What to do in state STATE-NUM.  If
@@ -690,8 +729,8 @@ namespace BisonFlex {
   const unsigned char
   Parser::yytable_[] =
   {
-         9,     1,     2,     0,     8,     1,     2,    12,    13,    11,
-      10
+        12,     1,     2,     0,    11,     1,     2,    15,    16,    14,
+      17,    18,    19,    13
   };
 
   /* YYCHECK.  */
@@ -699,7 +738,7 @@ namespace BisonFlex {
   Parser::yycheck_[] =
   {
          0,     5,     6,    -1,     3,     5,     6,     3,     3,     7,
-       3
+       3,     3,     3,     3
   };
 
   /* STOS_[STATE-NUM] -- The (internal number of the) accessing
@@ -707,8 +746,8 @@ namespace BisonFlex {
   const unsigned char
   Parser::yystos_[] =
   {
-         0,     5,     6,     9,    10,    11,    12,    13,     3,     0,
-      10,     7,     3,     3
+         0,     5,     6,     9,    10,    11,    12,    13,    14,    15,
+      16,     3,     0,    10,     7,     3,     3,     3,     3,     3
   };
 
 #if YYDEBUG
@@ -725,14 +764,16 @@ namespace BisonFlex {
   const unsigned char
   Parser::yyr1_[] =
   {
-         0,     8,     9,     9,    10,    10,    10,    11,    12,    13
+         0,     8,     9,     9,    10,    10,    10,    10,    10,    10,
+      11,    12,    13,    14,    15,    16
   };
 
   /* YYR2[YYN] -- Number of symbols composing right hand side of rule YYN.  */
   const unsigned char
   Parser::yyr2_[] =
   {
-         0,     2,     2,     1,     1,     1,     1,     4,     5,     1
+         0,     2,     2,     1,     1,     1,     1,     1,     1,     1,
+       4,     5,     6,     7,     8,     1
   };
 
 #if YYDEBUG || YYERROR_VERBOSE || YYTOKEN_TABLE
@@ -743,7 +784,7 @@ namespace BisonFlex {
   {
     "$end", "error", "$undefined", "STRING", "SEPARATOR", "COMMENTAIRE",
   "COMMAND_START", "COMMAND_STOP", "$accept", "input", "line", "line_1",
-  "line_2", "commentaire", 0
+  "line_2", "line_3", "line_4", "line_5", "commentaire", 0
   };
 #endif
 
@@ -753,8 +794,11 @@ namespace BisonFlex {
   Parser::yyrhs_[] =
   {
          9,     0,    -1,     9,    10,    -1,    10,    -1,    11,    -1,
-      12,    -1,    13,    -1,     6,     3,     7,     3,    -1,     6,
-       3,     7,     3,     3,    -1,     5,    -1
+      12,    -1,    13,    -1,    14,    -1,    15,    -1,    16,    -1,
+       6,     3,     7,     3,    -1,     6,     3,     7,     3,     3,
+      -1,     6,     3,     7,     3,     3,     3,    -1,     6,     3,
+       7,     3,     3,     3,     3,    -1,     6,     3,     7,     3,
+       3,     3,     3,     3,    -1,     5,    -1
   };
 
   /* YYPRHS[YYN] -- Index of the first RHS symbol of rule number YYN in
@@ -762,14 +806,16 @@ namespace BisonFlex {
   const unsigned char
   Parser::yyprhs_[] =
   {
-         0,     0,     3,     6,     8,    10,    12,    14,    19,    25
+         0,     0,     3,     6,     8,    10,    12,    14,    16,    18,
+      20,    25,    31,    38,    46,    55
   };
 
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
   const unsigned char
   Parser::yyrline_[] =
   {
-         0,    54,    54,    55,    59,    60,    61,    65,    73,    82
+         0,    54,    54,    55,    59,    60,    61,    62,    63,    64,
+      68,    76,    84,    93,   103,   114
   };
 
   // Print the state stack on the debug stream.
@@ -844,10 +890,10 @@ namespace BisonFlex {
   }
 
   const int Parser::yyeof_ = 0;
-  const int Parser::yylast_ = 10;
-  const int Parser::yynnts_ = 6;
+  const int Parser::yylast_ = 13;
+  const int Parser::yynnts_ = 9;
   const int Parser::yyempty_ = -2;
-  const int Parser::yyfinal_ = 9;
+  const int Parser::yyfinal_ = 12;
   const int Parser::yyterror_ = 1;
   const int Parser::yyerrcode_ = 256;
   const int Parser::yyntokens_ = 8;
@@ -861,16 +907,18 @@ namespace BisonFlex {
 } // BisonFlex
 
 /* Line 1053 of lalr1.cc  */
-#line 865 "parser.tab.cpp"
+#line 911 "parser.tab.cpp"
 
 
 /* Line 1055 of lalr1.cc  */
-#line 84 "parser.ypp"
+#line 116 "parser.ypp"
 
 
 // Error function throws an exception (std::string) with the location and error message
 void BisonFlex::Parser::error(const BisonFlex::Parser::location_type &loc,
                                           const std::string &msg) {
+	
+	std::cerr << "Parser Error at " << loc << ": " << msg << std::endl ;
 	std::ostringstream ret;
 	ret << "Parser Error at " << loc << ": " << msg;
 	throw ret.str();
