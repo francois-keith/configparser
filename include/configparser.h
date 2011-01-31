@@ -25,5 +25,10 @@ class WithConfigFile {
 };
 
 
+
+double string_to_double( const std::string& s ) ;
+int    string_to_int   ( const std::string& s ) ;
+
+
 #endif
 
