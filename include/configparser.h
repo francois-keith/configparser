@@ -34,7 +34,7 @@ LIBPARSER_API class WithConfigFile {
 
 LIBPARSER_API double string_to_double( const std::string& s ) ;
 LIBPARSER_API int    string_to_int   ( const std::string& s ) ;
-
+LIBPARSER_API unsigned long int    string_to_ulint   ( const std::string& s ) ;
 
 #endif
 
