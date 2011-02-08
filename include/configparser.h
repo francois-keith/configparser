@@ -16,6 +16,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <stdint.h>
 
 
 LIBPARSER_API class WithConfigFile {
@@ -32,9 +33,22 @@ LIBPARSER_API class WithConfigFile {
 
 
 
-LIBPARSER_API double string_to_double( const std::string& s ) ;
-LIBPARSER_API int    string_to_int   ( const std::string& s ) ;
-LIBPARSER_API unsigned long int    string_to_ulint   ( const std::string& s ) ;
+LIBPARSER_API double string_to_double ( const std::string& s ) ;
+LIBPARSER_API int    string_to_int    ( const std::string& s ) ;
+LIBPARSER_API float  string_to_float  ( const std::string& s ) ;
+
+LIBPARSER_API uint64_t  string_to_uint64 ( const std::string& s ) ;
+LIBPARSER_API uint32_t  string_to_uint32 ( const std::string& s ) ;
+LIBPARSER_API uint16_t  string_to_uint16 ( const std::string& s ) ;
+LIBPARSER_API uint8_t   string_to_uint8  ( const std::string& s ) ;
+
+LIBPARSER_API int64_t  string_to_int64 ( const std::string& s ) ;
+LIBPARSER_API int32_t  string_to_int32 ( const std::string& s ) ;
+LIBPARSER_API int16_t  string_to_int16 ( const std::string& s ) ;
+LIBPARSER_API int8_t   string_to_int8  ( const std::string& s ) ;
+
+
+
 
 #endif
 
