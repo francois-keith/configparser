@@ -4,9 +4,10 @@
  * To Public License, Version 2, as published by Sam Hocevar. See
  * http://sam.zoy.org/wtfpl/COPYING for more details. */
 
-#include <configparser.h>
-
+#include <configparser/configparser.h>
 #include "scanner.h"
+
+namespace configparser {
 
 void WithConfigFile::read_config_file(const char * fileName) throw(std::string) {
 
@@ -25,3 +26,5 @@ void WithConfigFile::read_config_file(const char * fileName) throw(std::string) 
 	parse_config_line ( config_lines[i] ) ;
 
 }
+
+} ;
