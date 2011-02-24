@@ -64,7 +64,7 @@ include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include"
 
 ### File Lists
 
-file( GLOB lib_srcs "src/*.cpp" "src/fast/*.cpp" )
+file( GLOB lib_srcs "src/*.c" "src/*.cpp" "src/*.cc" )
 file( GLOB lib_int_hdrs "src/*.h*")
 file( GLOB lib_hdrs "include/configparser/*.h*")
 
