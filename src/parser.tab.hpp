@@ -1,8 +1,10 @@
-/* A Bison parser, made by GNU Bison 2.4.2.  */
+
+/* A Bison parser, made by GNU Bison 2.4.1.  */
 
 /* Skeleton interface for Bison LALR(1) parsers in C++
    
-      Copyright (C) 2002-2010 Free Software Foundation, Inc.
+      Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software
+   Foundation, Inc.
    
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -37,7 +39,7 @@
 
 /* "%code requires" blocks.  */
 
-/* Line 34 of lalr1.cc  */
+/* Line 35 of lalr1.cc  */
 #line 21 "parser.ypp"
 
 	
@@ -61,8 +63,8 @@
 
 
 
-/* Line 34 of lalr1.cc  */
-#line 66 "parser.tab.hpp"
+/* Line 35 of lalr1.cc  */
+#line 68 "parser.tab.hpp"
 
 
 #include <string>
@@ -70,21 +72,21 @@
 #include "stack.hh"
 
 
-/* Line 34 of lalr1.cc  */
+/* Line 35 of lalr1.cc  */
 #line 12 "parser.ypp"
 namespace BisonFlex {
 
-/* Line 34 of lalr1.cc  */
-#line 79 "parser.tab.hpp"
+/* Line 35 of lalr1.cc  */
+#line 81 "parser.tab.hpp"
   class position;
   class location;
 
-/* Line 34 of lalr1.cc  */
+/* Line 35 of lalr1.cc  */
 #line 12 "parser.ypp"
 } // BisonFlex
 
-/* Line 34 of lalr1.cc  */
-#line 88 "parser.tab.hpp"
+/* Line 35 of lalr1.cc  */
+#line 90 "parser.tab.hpp"
 
 #include "location.hh"
 
@@ -126,12 +128,12 @@ do {							\
 #endif
 
 
-/* Line 34 of lalr1.cc  */
+/* Line 35 of lalr1.cc  */
 #line 12 "parser.ypp"
 namespace BisonFlex {
 
-/* Line 34 of lalr1.cc  */
-#line 135 "parser.tab.hpp"
+/* Line 35 of lalr1.cc  */
+#line 137 "parser.tab.hpp"
 
   /// A Bison parser.
   class Parser
@@ -326,12 +328,12 @@ namespace BisonFlex {
     std::vector< std::vector<std::string> > &configlines;
   };
 
-/* Line 34 of lalr1.cc  */
+/* Line 35 of lalr1.cc  */
 #line 12 "parser.ypp"
 } // BisonFlex
 
-/* Line 34 of lalr1.cc  */
-#line 335 "parser.tab.hpp"
+/* Line 35 of lalr1.cc  */
+#line 337 "parser.tab.hpp"
 
 
 

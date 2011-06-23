@@ -1,8 +1,9 @@
-/* A Bison parser, made by GNU Bison 2.4.2.  */
+
+/* A Bison parser, made by GNU Bison 2.4.1.  */
 
 /* Positions for Bison parsers in C++
    
-      Copyright (C) 2002-2007, 2009-2010 Free Software Foundation, Inc.
+      Copyright (C) 2002, 2003, 2004, 2005, 2006 Free Software Foundation, Inc.
    
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -43,12 +44,12 @@
 # include <algorithm>
 
 
-/* Line 37 of location.cc  */
+/* Line 38 of location.cc  */
 #line 12 "parser.ypp"
 namespace BisonFlex {
 
-/* Line 37 of location.cc  */
-#line 52 "position.hh"
+/* Line 38 of location.cc  */
+#line 53 "position.hh"
   /// Abstract a position.
   class position
   {
@@ -129,11 +130,10 @@ namespace BisonFlex {
   inline bool
   operator== (const position& pos1, const position& pos2)
   {
-    return (pos1.line == pos2.line
-            && pos1.column == pos2.column
-            && (pos1.filename == pos2.filename
-                || (pos1.filename && pos2.filename
-                    && *pos1.filename == *pos2.filename)));
+    return
+      (pos1.filename == pos2.filename
+       || pos1.filename && pos2.filename && *pos1.filename == *pos2.filename)
+      && pos1.line == pos2.line && pos1.column == pos2.column;
   }
 
   /// Compare two position objects.
