@@ -2,6 +2,8 @@
 
 #include <sstream>
 
+namespace configparser {
+
 double string_to_double( const std::string& s )
 {
    std::istringstream i(s);
@@ -91,4 +93,6 @@ int8_t  string_to_int8 ( const std::string& s ) {
    if (!(i >> x))
 	   return 0;
    return x;
+}
+
 }
