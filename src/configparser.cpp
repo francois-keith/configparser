@@ -11,6 +11,8 @@ namespace configparser {
 
 void WithConfigFile::read_config_file(const char * fileName) throw(std::string) {
 
+	config_lines.clear() ;
+
 	std::ifstream inFile(fileName);
 
     	if (!inFile.good()) {
