@@ -49,7 +49,7 @@ namespace configparser {
         {
             if(config_line.size() > 1 && config_line[0] == name)
             {
-                for(int i  = 1; i < config_line.size(); ++i)
+                for(size_t i  = 1; i < config_line.size(); ++i)
                 {
                     T member;
                     std::stringstream tmp;
