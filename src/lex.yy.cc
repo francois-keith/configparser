@@ -97,6 +97,7 @@ typedef unsigned int flex_uint32_t;
 #include <cstdlib>
 #include <cstdio>
 #include <cstring>
+#include <cstdio>
 /* end standard C++ headers. */
 
 #ifdef __cplusplus
@@ -434,7 +435,7 @@ static yyconst flex_int16_t yy_chk[22] =
 	#include "scanner.h"
 	// used to keep track of location
 	#define YY_USER_ACTION yylloc->columns(yyleng);
-#line 438 "lex.yy.cc"
+#line 439 "lex.yy.cc"
 
 #define INITIAL 0
 
@@ -546,7 +547,7 @@ YY_DECL
 	yylloc->step();
 
 
-#line 550 "lex.yy.cc"
+#line 551 "lex.yy.cc"
 
 	if ( !(yy_init) )
 		{
@@ -666,7 +667,7 @@ YY_RULE_SETUP
 #line 33 "scanner.l"
 YY_FATAL_ERROR( "flex scanner jammed" );
 	YY_BREAK
-#line 670 "lex.yy.cc"
+#line 671 "lex.yy.cc"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 

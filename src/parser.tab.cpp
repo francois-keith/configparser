@@ -1,10 +1,9 @@
-
-/* A Bison parser, made by GNU Bison 2.4.1.  */
+/* A Bison parser, made by GNU Bison 2.4.3.  */
 
 /* Skeleton implementation for Bison LALR(1) parsers in C++
    
-      Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software
-   Foundation, Inc.
+      Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free
+   Software Foundation, Inc.
    
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -37,7 +36,7 @@
 
 
 /* Line 311 of lalr1.cc  */
-#line 41 "parser.tab.cpp"
+#line 40 "parser.tab.cpp"
 
 
 #include "parser.tab.hpp"
@@ -46,7 +45,7 @@
 
 
 /* Line 317 of lalr1.cc  */
-#line 50 "parser.tab.cpp"
+#line 49 "parser.tab.cpp"
 /* Unqualified %code blocks.  */
 
 /* Line 318 of lalr1.cc  */
@@ -60,10 +59,10 @@
 
 
 /* Line 318 of lalr1.cc  */
-#line 64 "parser.tab.cpp"
+#line 63 "parser.tab.cpp"
 
 #ifndef YY_
-# if YYENABLE_NLS
+# if defined YYENABLE_NLS && YYENABLE_NLS
 #  if ENABLE_NLS
 #   include <libintl.h> /* FIXME: INFRINGES ON USER NAME SPACE */
 #   define YY_(msgid) dgettext ("bison-runtime", msgid)
@@ -128,7 +127,7 @@ do {					\
 namespace BisonFlex {
 
 /* Line 380 of lalr1.cc  */
-#line 132 "parser.tab.cpp"
+#line 131 "parser.tab.cpp"
 #if YYERROR_VERBOSE
 
   /* Return YYSTR after stripping away unnecessary quotes and
@@ -291,7 +290,7 @@ namespace BisonFlex {
     /// Location of the lookahead.
     location_type yylloc;
     /// The locations where the error started and ended.
-    location_type yyerror_range[2];
+    location_type yyerror_range[3];
 
     /// $$.
     semantic_type yyval;
@@ -417,29 +416,29 @@ namespace BisonFlex {
     YY_REDUCE_PRINT (yyn);
     switch (yyn)
       {
-	  case 13:
+	  case 21:
 
 /* Line 678 of lalr1.cc  */
-#line 71 "parser.ypp"
+#line 79 "parser.ypp"
     { std::vector<std::string>  line ;
 						     line.push_back ( (yysemantic_stack_[(3) - (2)]) ) ;
 						     configlines.push_back ( line ) ; }
     break;
 
-  case 14:
+  case 22:
 
 /* Line 678 of lalr1.cc  */
-#line 77 "parser.ypp"
+#line 85 "parser.ypp"
     { std::vector<std::string>  line ;
 						     line.push_back ( (yysemantic_stack_[(4) - (2)]) ) ;
 						     line.push_back ( (yysemantic_stack_[(4) - (4)]) ) ; 
 						     configlines.push_back ( line ) ; }
     break;
 
-  case 15:
+  case 23:
 
 /* Line 678 of lalr1.cc  */
-#line 85 "parser.ypp"
+#line 93 "parser.ypp"
     { std::vector<std::string>  line ;
 						     	    line.push_back ( (yysemantic_stack_[(5) - (2)]) ) ;
 						            line.push_back ( (yysemantic_stack_[(5) - (4)]) ) ; 
@@ -447,10 +446,10 @@ namespace BisonFlex {
 						     	    configlines.push_back ( line ) ; }
     break;
 
-  case 16:
+  case 24:
 
 /* Line 678 of lalr1.cc  */
-#line 93 "parser.ypp"
+#line 101 "parser.ypp"
     { std::vector<std::string>  line ;
 						     	    line.push_back ( (yysemantic_stack_[(6) - (2)]) ) ;
 						            line.push_back ( (yysemantic_stack_[(6) - (4)]) ) ; 
@@ -459,10 +458,10 @@ namespace BisonFlex {
 						     	    configlines.push_back ( line ) ; }
     break;
 
-  case 17:
+  case 25:
 
 /* Line 678 of lalr1.cc  */
-#line 102 "parser.ypp"
+#line 110 "parser.ypp"
     { std::vector<std::string>  line ;
 								     	    line.push_back ( (yysemantic_stack_[(7) - (2)]) ) ;
 								            line.push_back ( (yysemantic_stack_[(7) - (4)]) ) ; 
@@ -472,10 +471,10 @@ namespace BisonFlex {
 								     	    configlines.push_back ( line ) ; }
     break;
 
-  case 18:
+  case 26:
 
 /* Line 678 of lalr1.cc  */
-#line 112 "parser.ypp"
+#line 120 "parser.ypp"
     { std::vector<std::string>  line ;
 									     	    line.push_back ( (yysemantic_stack_[(8) - (2)]) ) ;
 									            line.push_back ( (yysemantic_stack_[(8) - (4)]) ) ; 
@@ -486,10 +485,10 @@ namespace BisonFlex {
 						     	    			    configlines.push_back ( line ) ; }
     break;
 
-  case 19:
+  case 27:
 
 /* Line 678 of lalr1.cc  */
-#line 123 "parser.ypp"
+#line 131 "parser.ypp"
     { std::vector<std::string>  line ;
 									     	    	line.push_back ( (yysemantic_stack_[(9) - (2)]) ) ;
 									            	line.push_back ( (yysemantic_stack_[(9) - (4)]) ) ; 
@@ -501,10 +500,10 @@ namespace BisonFlex {
 						     	    			    	configlines.push_back ( line ) ; }
     break;
 
-  case 20:
+  case 28:
 
 /* Line 678 of lalr1.cc  */
-#line 135 "parser.ypp"
+#line 143 "parser.ypp"
     { std::vector<std::string>  line ;
 									     	    		line.push_back ( (yysemantic_stack_[(10) - (2)]) ) ;
 									            		line.push_back ( (yysemantic_stack_[(10) - (4)]) ) ; 
@@ -517,17 +516,181 @@ namespace BisonFlex {
 												configlines.push_back ( line ) ; }
     break;
 
-  case 21:
+  case 29:
 
 /* Line 678 of lalr1.cc  */
-#line 149 "parser.ypp"
+#line 157 "parser.ypp"
+    { std::vector<std::string>  line ;
+									     	    		line.push_back ( (yysemantic_stack_[(11) - (2)]) ) ;
+									            		line.push_back ( (yysemantic_stack_[(11) - (4)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(11) - (5)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(11) - (6)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(11) - (7)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(11) - (8)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(11) - (9)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(11) - (10)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(11) - (11)]) ) ; 
+												configlines.push_back ( line ) ; }
+    break;
+
+  case 30:
+
+/* Line 678 of lalr1.cc  */
+#line 172 "parser.ypp"
+    { std::vector<std::string>  line ;
+									     	    		line.push_back ( (yysemantic_stack_[(12) - (2)]) ) ;
+									            		line.push_back ( (yysemantic_stack_[(12) - (4)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(12) - (5)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(12) - (6)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(12) - (7)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(12) - (8)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(12) - (9)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(12) - (10)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(12) - (11)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(12) - (12)]) ) ; 
+												configlines.push_back ( line ) ; }
+    break;
+
+  case 31:
+
+/* Line 678 of lalr1.cc  */
+#line 189 "parser.ypp"
+    { std::vector<std::string>  line ;
+									     	    		line.push_back ( (yysemantic_stack_[(13) - (2)]) ) ;
+									            		line.push_back ( (yysemantic_stack_[(13) - (4)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(13) - (5)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(13) - (6)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(13) - (7)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(13) - (8)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(13) - (9)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(13) - (10)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(13) - (11)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(13) - (12)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(13) - (13)]) ) ; 
+												configlines.push_back ( line ) ; }
+    break;
+
+  case 32:
+
+/* Line 678 of lalr1.cc  */
+#line 207 "parser.ypp"
+    { std::vector<std::string>  line ;
+									     	    		line.push_back ( (yysemantic_stack_[(14) - (2)]) ) ;
+									            		line.push_back ( (yysemantic_stack_[(14) - (4)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(14) - (5)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(14) - (6)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(14) - (7)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(14) - (8)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(14) - (9)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(14) - (10)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(14) - (11)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(14) - (12)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(14) - (13)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(14) - (14)]) ) ; 
+												configlines.push_back ( line ) ; }
+    break;
+
+  case 33:
+
+/* Line 678 of lalr1.cc  */
+#line 227 "parser.ypp"
+    { std::vector<std::string>  line ;
+									     	    		line.push_back ( (yysemantic_stack_[(15) - (2)]) ) ;
+									            		line.push_back ( (yysemantic_stack_[(15) - (4)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(15) - (5)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(15) - (6)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(15) - (7)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(15) - (8)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(15) - (9)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(15) - (10)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(15) - (11)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(15) - (12)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(15) - (13)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(15) - (14)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(15) - (15)]) ) ; 
+												configlines.push_back ( line ) ; }
+    break;
+
+  case 34:
+
+/* Line 678 of lalr1.cc  */
+#line 248 "parser.ypp"
+    { std::vector<std::string>  line ;
+									     	    		line.push_back ( (yysemantic_stack_[(16) - (2)]) ) ;
+									            		line.push_back ( (yysemantic_stack_[(16) - (4)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(16) - (5)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(16) - (6)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(16) - (7)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(16) - (8)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(16) - (9)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(16) - (10)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(16) - (11)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(16) - (12)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(16) - (13)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(16) - (14)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(16) - (15)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(16) - (16)]) ) ; 
+												configlines.push_back ( line ) ; }
+    break;
+
+  case 35:
+
+/* Line 678 of lalr1.cc  */
+#line 270 "parser.ypp"
+    { std::vector<std::string>  line ;
+									     	    		line.push_back ( (yysemantic_stack_[(17) - (2)]) ) ;
+									            		line.push_back ( (yysemantic_stack_[(17) - (4)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(17) - (5)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(17) - (6)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(17) - (7)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(17) - (8)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(17) - (9)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(17) - (10)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(17) - (11)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(17) - (12)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(17) - (13)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(17) - (14)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(17) - (15)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(17) - (16)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(17) - (17)]) ) ; 
+												configlines.push_back ( line ) ; }
+    break;
+
+  case 36:
+
+/* Line 678 of lalr1.cc  */
+#line 293 "parser.ypp"
+    { std::vector<std::string>  line ;
+									     	    		line.push_back ( (yysemantic_stack_[(18) - (2)]) ) ;
+									            		line.push_back ( (yysemantic_stack_[(18) - (4)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (5)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (6)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (7)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (8)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (9)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (10)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (11)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (12)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (13)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (14)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (15)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (16)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (17)]) ) ; 
+									            		line.push_back ( (yysemantic_stack_[(18) - (18)]) ) ; 
+												configlines.push_back ( line ) ; }
+    break;
+
+  case 37:
+
+/* Line 678 of lalr1.cc  */
+#line 317 "parser.ypp"
     { }
     break;
 
 
 
 /* Line 678 of lalr1.cc  */
-#line 531 "parser.tab.cpp"
+#line 694 "parser.tab.cpp"
 	default:
           break;
       }
@@ -561,7 +724,7 @@ namespace BisonFlex {
 	error (yylloc, yysyntax_error_ (yystate));
       }
 
-    yyerror_range[0] = yylloc;
+    yyerror_range[1] = yylloc;
     if (yyerrstatus_ == 3)
       {
 	/* If just tried and failed to reuse lookahead token after an
@@ -596,7 +759,7 @@ namespace BisonFlex {
     if (false)
       goto yyerrorlab;
 
-    yyerror_range[0] = yylocation_stack_[yylen - 1];
+    yyerror_range[1] = yylocation_stack_[yylen - 1];
     /* Do not reclaim the symbols of the rule which action triggered
        this YYERROR.  */
     yypop_ (yylen);
@@ -628,7 +791,7 @@ namespace BisonFlex {
 	if (yystate_stack_.height () == 1)
 	YYABORT;
 
-	yyerror_range[0] = yylocation_stack_[0];
+	yyerror_range[1] = yylocation_stack_[0];
 	yydestruct_ ("Error: popping",
 		     yystos_[yystate],
 		     &yysemantic_stack_[0], &yylocation_stack_[0]);
@@ -637,10 +800,10 @@ namespace BisonFlex {
 	YY_STACK_PRINT ();
       }
 
-    yyerror_range[1] = yylloc;
+    yyerror_range[2] = yylloc;
     // Using YYLLOC is tempting, but would change the location of
     // the lookahead.  YYLOC is available though.
-    YYLLOC_DEFAULT (yyloc, (yyerror_range - 1), 2);
+    YYLLOC_DEFAULT (yyloc, yyerror_range, 2);
     yysemantic_stack_.push (yylval);
     yylocation_stack_.push (yyloc);
 
@@ -737,8 +900,10 @@ namespace BisonFlex {
   Parser::yypact_[] =
   {
         -4,    -5,     1,     0,    -5,    -5,    -5,    -5,    -5,    -5,
-      -5,    -5,    -5,    -5,     2,    -5,    -5,     4,     5,     7,
-       8,     9,    10,    11,    -5
+      -5,    -5,    -5,    -5,    -5,    -5,    -5,    -5,    -5,    -5,
+      -5,    -5,     2,    -5,    -5,     4,     5,     7,     8,     9,
+      10,    11,    12,    13,    14,    15,    16,    17,    18,    19,
+      -5
   };
 
   /* YYDEFACT[S] -- default rule to reduce with in state S when YYTABLE
@@ -747,17 +912,19 @@ namespace BisonFlex {
   const unsigned char
   Parser::yydefact_[] =
   {
-         0,    21,     0,     0,     3,     4,     5,     6,     7,     8,
-       9,    10,    11,    12,     0,     1,     2,    13,    14,    15,
-      16,    17,    18,    19,    20
+         0,    37,     0,     0,     3,     4,     5,     6,     7,     8,
+       9,    10,    11,    12,    13,    14,    15,    16,    17,    18,
+      19,    20,     0,     1,     2,    21,    22,    23,    24,    25,
+      26,    27,    28,    29,    30,    31,    32,    33,    34,    35,
+      36
   };
 
   /* YYPGOTO[NTERM-NUM].  */
   const signed char
   Parser::yypgoto_[] =
   {
-        -5,    -5,    12,    -5,    -5,    -5,    -5,    -5,    -5,    -5,
-      -5,    -5
+        -5,    -5,    20,    -5,    -5,    -5,    -5,    -5,    -5,    -5,
+      -5,    -5,    -5,    -5,    -5,    -5,    -5,    -5,    -5,    -5
   };
 
   /* YYDEFGOTO[NTERM-NUM].  */
@@ -765,7 +932,7 @@ namespace BisonFlex {
   Parser::yydefgoto_[] =
   {
         -1,     3,     4,     5,     6,     7,     8,     9,    10,    11,
-      12,    13
+      12,    13,    14,    15,    16,    17,    18,    19,    20,    21
   };
 
   /* YYTABLE[YYPACT[STATE-NUM]].  What to do in state STATE-NUM.  If
@@ -775,8 +942,9 @@ namespace BisonFlex {
   const unsigned char
   Parser::yytable_[] =
   {
-        15,     1,     2,     0,    14,     1,     2,    18,    19,    17,
-      20,    21,    22,    23,    24,    16
+        23,     1,     2,     0,    22,     1,     2,    26,    27,    25,
+      28,    29,    30,    31,    32,    33,    34,    35,    36,    37,
+      38,    39,    40,    24
   };
 
   /* YYCHECK.  */
@@ -784,7 +952,8 @@ namespace BisonFlex {
   Parser::yycheck_[] =
   {
          0,     5,     6,    -1,     3,     5,     6,     3,     3,     7,
-       3,     3,     3,     3,     3,     3
+       3,     3,     3,     3,     3,     3,     3,     3,     3,     3,
+       3,     3,     3,     3
   };
 
   /* STOS_[STATE-NUM] -- The (internal number of the) accessing
@@ -793,8 +962,10 @@ namespace BisonFlex {
   Parser::yystos_[] =
   {
          0,     5,     6,     9,    10,    11,    12,    13,    14,    15,
-      16,    17,    18,    19,     3,     0,    10,     7,     3,     3,
-       3,     3,     3,     3,     3
+      16,    17,    18,    19,    20,    21,    22,    23,    24,    25,
+      26,    27,     3,     0,    10,     7,     3,     3,     3,     3,
+       3,     3,     3,     3,     3,     3,     3,     3,     3,     3,
+       3
   };
 
 #if YYDEBUG
@@ -812,8 +983,9 @@ namespace BisonFlex {
   Parser::yyr1_[] =
   {
          0,     8,     9,     9,    10,    10,    10,    10,    10,    10,
-      10,    10,    10,    11,    12,    13,    14,    15,    16,    17,
-      18,    19
+      10,    10,    10,    10,    10,    10,    10,    10,    10,    10,
+      10,    11,    12,    13,    14,    15,    16,    17,    18,    19,
+      20,    21,    22,    23,    24,    25,    26,    27
   };
 
   /* YYR2[YYN] -- Number of symbols composing right hand side of rule YYN.  */
@@ -821,8 +993,9 @@ namespace BisonFlex {
   Parser::yyr2_[] =
   {
          0,     2,     2,     1,     1,     1,     1,     1,     1,     1,
-       1,     1,     1,     3,     4,     5,     6,     7,     8,     9,
-      10,     1
+       1,     1,     1,     1,     1,     1,     1,     1,     1,     1,
+       1,     3,     4,     5,     6,     7,     8,     9,    10,    11,
+      12,    13,    14,    15,    16,    17,    18,     1
   };
 
 #if YYDEBUG || YYERROR_VERBOSE || YYTOKEN_TABLE
@@ -834,7 +1007,8 @@ namespace BisonFlex {
     "$end", "error", "$undefined", "STRING", "SEPARATOR", "COMMENTAIRE",
   "COMMAND_START", "COMMAND_STOP", "$accept", "input", "line", "line_0",
   "line_1", "line_2", "line_3", "line_4", "line_5", "line_6", "line_7",
-  "commentaire", 0
+  "line_8", "line_9", "line_10", "line_11", "line_12", "line_13",
+  "line_14", "line_15", "commentaire", 0
   };
 #endif
 
@@ -845,12 +1019,26 @@ namespace BisonFlex {
   {
          9,     0,    -1,     9,    10,    -1,    10,    -1,    11,    -1,
       12,    -1,    13,    -1,    14,    -1,    15,    -1,    16,    -1,
-      17,    -1,    18,    -1,    19,    -1,     6,     3,     7,    -1,
-       6,     3,     7,     3,    -1,     6,     3,     7,     3,     3,
-      -1,     6,     3,     7,     3,     3,     3,    -1,     6,     3,
-       7,     3,     3,     3,     3,    -1,     6,     3,     7,     3,
-       3,     3,     3,     3,    -1,     6,     3,     7,     3,     3,
-       3,     3,     3,     3,    -1,     6,     3,     7,     3,     3,
+      17,    -1,    18,    -1,    19,    -1,    20,    -1,    21,    -1,
+      22,    -1,    23,    -1,    24,    -1,    25,    -1,    26,    -1,
+      27,    -1,     6,     3,     7,    -1,     6,     3,     7,     3,
+      -1,     6,     3,     7,     3,     3,    -1,     6,     3,     7,
+       3,     3,     3,    -1,     6,     3,     7,     3,     3,     3,
+       3,    -1,     6,     3,     7,     3,     3,     3,     3,     3,
+      -1,     6,     3,     7,     3,     3,     3,     3,     3,     3,
+      -1,     6,     3,     7,     3,     3,     3,     3,     3,     3,
+       3,    -1,     6,     3,     7,     3,     3,     3,     3,     3,
+       3,     3,     3,    -1,     6,     3,     7,     3,     3,     3,
+       3,     3,     3,     3,     3,     3,    -1,     6,     3,     7,
+       3,     3,     3,     3,     3,     3,     3,     3,     3,     3,
+      -1,     6,     3,     7,     3,     3,     3,     3,     3,     3,
+       3,     3,     3,     3,     3,    -1,     6,     3,     7,     3,
+       3,     3,     3,     3,     3,     3,     3,     3,     3,     3,
+       3,    -1,     6,     3,     7,     3,     3,     3,     3,     3,
+       3,     3,     3,     3,     3,     3,     3,     3,    -1,     6,
+       3,     7,     3,     3,     3,     3,     3,     3,     3,     3,
+       3,     3,     3,     3,     3,     3,    -1,     6,     3,     7,
+       3,     3,     3,     3,     3,     3,     3,     3,     3,     3,
        3,     3,     3,     3,     3,    -1,     5,    -1
   };
 
@@ -860,17 +1048,19 @@ namespace BisonFlex {
   Parser::yyprhs_[] =
   {
          0,     0,     3,     6,     8,    10,    12,    14,    16,    18,
-      20,    22,    24,    26,    30,    35,    41,    48,    56,    65,
-      75,    86
+      20,    22,    24,    26,    28,    30,    32,    34,    36,    38,
+      40,    42,    46,    51,    57,    64,    72,    81,    91,   102,
+     114,   127,   141,   156,   172,   189,   207,   226
   };
 
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
-  const unsigned char
+  const unsigned short int
   Parser::yyrline_[] =
   {
          0,    54,    54,    55,    59,    60,    61,    62,    63,    64,
-      65,    66,    67,    71,    77,    85,    93,   102,   112,   123,
-     135,   149
+      65,    66,    67,    68,    69,    70,    71,    72,    73,    74,
+      75,    79,    85,    93,   101,   110,   120,   131,   143,   157,
+     172,   189,   207,   227,   248,   270,   293,   317
   };
 
   // Print the state stack on the debug stream.
@@ -945,10 +1135,10 @@ namespace BisonFlex {
   }
 
   const int Parser::yyeof_ = 0;
-  const int Parser::yylast_ = 15;
-  const int Parser::yynnts_ = 12;
+  const int Parser::yylast_ = 23;
+  const int Parser::yynnts_ = 20;
   const int Parser::yyempty_ = -2;
-  const int Parser::yyfinal_ = 15;
+  const int Parser::yyfinal_ = 23;
   const int Parser::yyterror_ = 1;
   const int Parser::yyerrcode_ = 256;
   const int Parser::yyntokens_ = 8;
@@ -962,11 +1152,11 @@ namespace BisonFlex {
 } // BisonFlex
 
 /* Line 1054 of lalr1.cc  */
-#line 966 "parser.tab.cpp"
+#line 1156 "parser.tab.cpp"
 
 
 /* Line 1056 of lalr1.cc  */
-#line 151 "parser.ypp"
+#line 319 "parser.ypp"
 
 
 // Error function throws an exception (std::string) with the location and error message

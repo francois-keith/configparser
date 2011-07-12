@@ -1,10 +1,9 @@
-
-/* A Bison parser, made by GNU Bison 2.4.1.  */
+/* A Bison parser, made by GNU Bison 2.4.3.  */
 
 /* Skeleton interface for Bison LALR(1) parsers in C++
    
-      Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software
-   Foundation, Inc.
+      Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free
+   Software Foundation, Inc.
    
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -64,7 +63,7 @@
 
 
 /* Line 35 of lalr1.cc  */
-#line 68 "parser.tab.hpp"
+#line 67 "parser.tab.hpp"
 
 
 #include <string>
@@ -77,7 +76,7 @@
 namespace BisonFlex {
 
 /* Line 35 of lalr1.cc  */
-#line 81 "parser.tab.hpp"
+#line 80 "parser.tab.hpp"
   class position;
   class location;
 
@@ -86,7 +85,7 @@ namespace BisonFlex {
 } // BisonFlex
 
 /* Line 35 of lalr1.cc  */
-#line 90 "parser.tab.hpp"
+#line 89 "parser.tab.hpp"
 
 #include "location.hh"
 
@@ -133,7 +132,7 @@ do {							\
 namespace BisonFlex {
 
 /* Line 35 of lalr1.cc  */
-#line 137 "parser.tab.hpp"
+#line 136 "parser.tab.hpp"
 
   /// A Bison parser.
   class Parser
@@ -281,7 +280,7 @@ namespace BisonFlex {
     /// For each rule, the index of the first RHS symbol in \a yyrhs_.
     static const unsigned char yyprhs_[];
     /// For each rule, its source line number.
-    static const unsigned char yyrline_[];
+    static const unsigned short int yyrline_[];
     /// For each scanner token number, its symbol number.
     static const unsigned short int yytoken_number_[];
     /// Report on the debug stream that the rule \a r is going to be reduced.
@@ -333,7 +332,7 @@ namespace BisonFlex {
 } // BisonFlex
 
 /* Line 35 of lalr1.cc  */
-#line 337 "parser.tab.hpp"
+#line 336 "parser.tab.hpp"
 
 
 
