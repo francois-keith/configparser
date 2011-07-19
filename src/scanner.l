@@ -23,6 +23,7 @@ separator	[\t ]+
 %}
 
 [#].*"\n"			{ return BisonFlex::Parser::token::COMMENTAIRE ; } 
+[#].*"<<EOF>>"			{ return BisonFlex::Parser::token::COMMENTAIRE ; } 
 "["      			{ return BisonFlex::Parser::token::COMMAND_START ; }
 "]"				{ return BisonFlex::Parser::token::COMMAND_STOP ; }
 [0-9a-zA-Z\._\-\/]*		{ *yylval = yytext; return BisonFlex::Parser::token::STRING ; }			
