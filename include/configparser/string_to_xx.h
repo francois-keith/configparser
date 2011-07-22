@@ -9,6 +9,8 @@
 
 #include <string>
 #include <stdint.h>
+#include <iostream>
+#include <cstdlib>
 
 #include <configparser/configparser.h>
 
@@ -27,6 +29,8 @@ namespace configparser {
 	LIBPARSER_API int32_t  string_to_int32 ( const std::string& s ) ;
 	LIBPARSER_API int16_t  string_to_int16 ( const std::string& s ) ;
 	LIBPARSER_API int8_t   string_to_int8  ( const std::string& s ) ;
+	
+	LIBPARSER_API void parse_check_line( std::vector<std::string> & line, int SIZE);
 
 }
 

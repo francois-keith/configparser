@@ -1,5 +1,4 @@
 #include <configparser/string_to_xx.h>
-
 #include <sstream>
 
 namespace configparser {
@@ -93,6 +92,15 @@ int8_t  string_to_int8 ( const std::string& s ) {
    if (!(i >> x))
 	   return 0;
    return x;
+}
+
+void parse_check_line( std::vector<std::string> & line, int SIZE)
+{
+	if( line.size() != (SIZE +1))
+	{
+		std::cerr<<" ERROR  in config file, command "<< line[0]<< " considers "<< SIZE<< " options and "<< line.size() -1 <<" are give "<< std::endl;
+		exit(0);
+	}
 }
 
 }
