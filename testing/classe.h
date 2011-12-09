@@ -12,9 +12,12 @@
 
 #include <configparser.h>
 
-class la_classe:public WithConfigFile {
+class la_classe : public configparser::WithConfigFile 
+{
 
-    public:void parse_config_line (std::vector<std::string> &line) ;
+    public:
+    
+    	void parse_config_line (std::vector<std::string> &line) ;
 
 
 

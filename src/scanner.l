@@ -22,11 +22,11 @@ separator	[\t ]+
 	yylloc->step();
 %}
 
-[#].*				{ return BisonFlex::Parser::token::COMMENTAIRE ; } 
-"["      			{ return BisonFlex::Parser::token::COMMAND_START ; }
-"]"				{ return BisonFlex::Parser::token::COMMAND_STOP ; }
-[0-9a-zA-Z\._\-\/]*		{ *yylval = yytext; return BisonFlex::Parser::token::STRING ; }			
+[#].*							{ return BisonFlex::Parser::token::COMMENTAIRE ; } 
+"["      						{ return BisonFlex::Parser::token::COMMAND_START ; }
+"]"							{ return BisonFlex::Parser::token::COMMAND_STOP ; }
+(\"[0-9a-zA-Z\._\-\/ ]*\"|[0-9a-zA-Z\._\-\/]*)		{ *yylval = yytext; return BisonFlex::Parser::token::STRING ; }			
 
-.            { yylloc->step(); }
-"\n"+        { yylloc->lines(yyleng); yylloc->step(); }
+.            						{ yylloc->step(); }
+"\n"+        						{ yylloc->lines(yyleng); yylloc->step(); }
 
