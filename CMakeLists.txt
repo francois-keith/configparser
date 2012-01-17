@@ -50,10 +50,16 @@ configure_file (
 
 
 ### Set include directories 
-        
+IF(WIN32)
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include"
+			"${CMAKE_CURRENT_SOURCE_DIR}/contrib/include"
+		    "${CMAKE_CURRENT_SOURCE_DIR}/src"
+	            "${CMAKE_CURRENT_BINARY_DIR}" )
+ELSE(WIN32)
 include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include"
 		    "${CMAKE_CURRENT_SOURCE_DIR}/src"
 	            "${CMAKE_CURRENT_BINARY_DIR}" )
+ENDIF(WIN32)
 
 
 ### File Lists
