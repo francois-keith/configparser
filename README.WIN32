@@ -1,3 +1,13 @@
+Easy way
+========
+
+git checkout -b win32 origin/win32
+
+Generate project file via cmake and enjoy
+
+The other way
+=============
+
 To build under win32 you need to install flex and bison from
 http://gnuwin32.sourceforge.net/packages/flex.htm
 and
