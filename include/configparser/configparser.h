@@ -32,7 +32,8 @@ namespace configparser {
 	    LIBPARSER_API void read_config_file(const char *fileName) throw(std::string) ; 
 
         /* Generic function to read a member from a config file */
-        LIBPARSER_API template<typename T> bool fill_member(const std::vector<std::string> & config_line, const std::string & name, T & member)
+        template<typename T> 
+		bool fill_member(const std::vector<std::string> & config_line, const std::string & name, T & member)
         {
             if(config_line.size() > 1 && config_line[0] == name)
             { 
@@ -45,7 +46,7 @@ namespace configparser {
         }
 
         /* Generic function to read a member vector to a config file */
-        LIBPARSER_API template<typename T> bool fill_member(const std::vector<std::string> & config_line, const std::string & name, std::vector<T> & memberV)
+        template<typename T> bool fill_member(const std::vector<std::string> & config_line, const std::string & name, std::vector<T> & memberV)
         {
             if(config_line.size() > 1 && config_line[0] == name)
             {
