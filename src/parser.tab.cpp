@@ -1,9 +1,10 @@
-/* A Bison parser, made by GNU Bison 2.4.3.  */
+
+/* A Bison parser, made by GNU Bison 2.4.1.  */
 
 /* Skeleton implementation for Bison LALR(1) parsers in C++
    
-      Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free
-   Software Foundation, Inc.
+      Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software
+   Foundation, Inc.
    
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -36,7 +37,7 @@
 
 
 /* Line 311 of lalr1.cc  */
-#line 40 "parser.tab.cpp"
+#line 41 "parser.tab.cpp"
 
 
 #include "parser.tab.hpp"
@@ -45,7 +46,7 @@
 
 
 /* Line 317 of lalr1.cc  */
-#line 49 "parser.tab.cpp"
+#line 50 "parser.tab.cpp"
 /* Unqualified %code blocks.  */
 
 /* Line 318 of lalr1.cc  */
@@ -59,10 +60,10 @@
 
 
 /* Line 318 of lalr1.cc  */
-#line 63 "parser.tab.cpp"
+#line 64 "parser.tab.cpp"
 
 #ifndef YY_
-# if defined YYENABLE_NLS && YYENABLE_NLS
+# if YYENABLE_NLS
 #  if ENABLE_NLS
 #   include <libintl.h> /* FIXME: INFRINGES ON USER NAME SPACE */
 #   define YY_(msgid) dgettext ("bison-runtime", msgid)
@@ -127,7 +128,7 @@ do {					\
 namespace BisonFlex {
 
 /* Line 380 of lalr1.cc  */
-#line 131 "parser.tab.cpp"
+#line 132 "parser.tab.cpp"
 #if YYERROR_VERBOSE
 
   /* Return YYSTR after stripping away unnecessary quotes and
@@ -290,7 +291,7 @@ namespace BisonFlex {
     /// Location of the lookahead.
     location_type yylloc;
     /// The locations where the error started and ended.
-    location_type yyerror_range[3];
+    location_type yyerror_range[2];
 
     /// $$.
     semantic_type yyval;
@@ -690,7 +691,7 @@ namespace BisonFlex {
 
 
 /* Line 678 of lalr1.cc  */
-#line 694 "parser.tab.cpp"
+#line 695 "parser.tab.cpp"
 	default:
           break;
       }
@@ -724,7 +725,7 @@ namespace BisonFlex {
 	error (yylloc, yysyntax_error_ (yystate));
       }
 
-    yyerror_range[1] = yylloc;
+    yyerror_range[0] = yylloc;
     if (yyerrstatus_ == 3)
       {
 	/* If just tried and failed to reuse lookahead token after an
@@ -759,7 +760,7 @@ namespace BisonFlex {
     if (false)
       goto yyerrorlab;
 
-    yyerror_range[1] = yylocation_stack_[yylen - 1];
+    yyerror_range[0] = yylocation_stack_[yylen - 1];
     /* Do not reclaim the symbols of the rule which action triggered
        this YYERROR.  */
     yypop_ (yylen);
@@ -791,7 +792,7 @@ namespace BisonFlex {
 	if (yystate_stack_.height () == 1)
 	YYABORT;
 
-	yyerror_range[1] = yylocation_stack_[0];
+	yyerror_range[0] = yylocation_stack_[0];
 	yydestruct_ ("Error: popping",
 		     yystos_[yystate],
 		     &yysemantic_stack_[0], &yylocation_stack_[0]);
@@ -800,10 +801,10 @@ namespace BisonFlex {
 	YY_STACK_PRINT ();
       }
 
-    yyerror_range[2] = yylloc;
+    yyerror_range[1] = yylloc;
     // Using YYLLOC is tempting, but would change the location of
     // the lookahead.  YYLOC is available though.
-    YYLLOC_DEFAULT (yyloc, yyerror_range, 2);
+    YYLLOC_DEFAULT (yyloc, (yyerror_range - 1), 2);
     yysemantic_stack_.push (yylval);
     yylocation_stack_.push (yyloc);
 
@@ -1152,7 +1153,7 @@ namespace BisonFlex {
 } // BisonFlex
 
 /* Line 1054 of lalr1.cc  */
-#line 1156 "parser.tab.cpp"
+#line 1157 "parser.tab.cpp"
 
 
 /* Line 1056 of lalr1.cc  */
