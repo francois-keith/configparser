@@ -1,9 +1,10 @@
-/* A Bison parser, made by GNU Bison 2.4.3.  */
+
+/* A Bison parser, made by GNU Bison 2.4.1.  */
 
 /* Skeleton interface for Bison LALR(1) parsers in C++
    
-      Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free
-   Software Foundation, Inc.
+      Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software
+   Foundation, Inc.
    
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -63,7 +64,7 @@
 
 
 /* Line 35 of lalr1.cc  */
-#line 67 "parser.tab.hpp"
+#line 68 "parser.tab.hpp"
 
 
 #include <string>
@@ -76,7 +77,7 @@
 namespace BisonFlex {
 
 /* Line 35 of lalr1.cc  */
-#line 80 "parser.tab.hpp"
+#line 81 "parser.tab.hpp"
   class position;
   class location;
 
@@ -85,7 +86,7 @@ namespace BisonFlex {
 } // BisonFlex
 
 /* Line 35 of lalr1.cc  */
-#line 89 "parser.tab.hpp"
+#line 90 "parser.tab.hpp"
 
 #include "location.hh"
 
@@ -132,7 +133,7 @@ do {							\
 namespace BisonFlex {
 
 /* Line 35 of lalr1.cc  */
-#line 136 "parser.tab.hpp"
+#line 137 "parser.tab.hpp"
 
   /// A Bison parser.
   class Parser
@@ -332,7 +333,7 @@ namespace BisonFlex {
 } // BisonFlex
 
 /* Line 35 of lalr1.cc  */
-#line 336 "parser.tab.hpp"
+#line 337 "parser.tab.hpp"
 
 
 

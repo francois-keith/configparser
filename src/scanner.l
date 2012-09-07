@@ -25,7 +25,7 @@ separator	[\t ]+
 [#].*							{ return BisonFlex::Parser::token::COMMENTAIRE ; } 
 "["      						{ return BisonFlex::Parser::token::COMMAND_START ; }
 "]"							{ return BisonFlex::Parser::token::COMMAND_STOP ; }
-(\"[0-9a-zA-Z\._\-\/ ]*\"|[0-9a-zA-Z\._\-\/]*)		{ *yylval = yytext; return BisonFlex::Parser::token::STRING ; }			
+(\"[0-9a-zA-Z\._\-\/:\\ ]*\"|[0-9a-zA-Z\._\-\/:\\]*)		{ *yylval = yytext; return BisonFlex::Parser::token::STRING ; }			
 
 .            						{ yylloc->step(); }
 "\n"+        						{ yylloc->lines(yyleng); yylloc->step(); }
