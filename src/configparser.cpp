@@ -29,4 +29,9 @@ void WithConfigFile::read_config_file(const char * fileName) throw(std::string) 
 
 }
 
+void WithConfigFile::read_config_file(std::string & fileName) throw(std::string)
+{
+    return read_config_file(fileName.c_str());
+}
+
 } ;
