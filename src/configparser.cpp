@@ -34,4 +34,10 @@ void WithConfigFile::read_config_file(std::string & fileName) throw(std::string)
     return read_config_file(fileName.c_str());
 }
 
+void WithConfigFile::read_config_file(std::string fileName) throw(std::string)
+{
+    return read_config_file(fileName.c_str());
+}
+
+
 } ;
