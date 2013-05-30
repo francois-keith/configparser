@@ -1,0 +1,13 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+docdir=${datarootdir}/doc/@PROJECT_NAME@
+
+Name: @PROJECT_NAME@
+Description: 
+Version: @PROJECT_VERSION@
+Requires: @PACKAGE_REQUIREMENTS@
+Libs: @LIBDIR_KW@${libdir}  @LIBINCL_KW@@PROJECT_NAME@@LIB_EXT@
+Cflags: -I${includedir}

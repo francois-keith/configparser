@@ -83,5 +83,21 @@ configure_file(configparserConfig.cmake.in "${PROJECT_BINARY_DIR}/configparserCo
 
 install ( FILES "${PROJECT_BINARY_DIR}/configparserConfig.cmake" 
 	  DESTINATION "${INSTALL_LIB_PATH}/configparser" COMPONENT dev )  
+
+IF(WIN32)
+  SET(LIBDIR_KW "/LIBPATH:")
+  SET(LIBINCL_KW "")
+  SET(LIB_EXT ".lib")
+ELSEIF(UNIX)
+  SET(LIBDIR_KW "-L")
+  SET(LIBINCL_KW "-l")
+  SET(LIB_EXT "")
+ENDIF(WIN32)
+
+configure_file(configparser.pc.in
+               "${PROJECT_BINARY_DIR}/configparser.pc" @ONLY)
         
+install ( FILES "${PROJECT_BINARY_DIR}/configparser.pc"
+	  DESTINATION "${INSTALL_LIB_PATH}/pkgconfig"
+          COMPONENT dev )
 
