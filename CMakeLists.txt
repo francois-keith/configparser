@@ -45,9 +45,17 @@ configure_file (
 )
 
 
-### Search for Lib/Headers
+### Check for external dependency: flex
 
-
+EXEC_PROGRAM(flux ARGS  --version  OUTPUT_VARIABLE FLEX_VERSION_RAW RETURN_VALUE FlexExists)
+IF( ${FlexExists} EQUAL 0 )
+    STRING(REPLACE "flex " "" FLEX_VERSION "${FLEX_VERSION_RAW}")
+    IF(NOT "${FLEX_VERSION}" EQUAL "2.5.35")
+        MESSAGE("Flex version not adequate. Please install flex, version 2.5.35")
+    ENDIF(NOT "${FLEX_VERSION}" EQUAL "2.5.35")
+ELSE()
+  MESSAGE("Flex not found. Please install flex, version 2.5.35")
+ENDIF ( ${FlexExists} EQUAL 0 )
 
 ### Set include directories 
         
